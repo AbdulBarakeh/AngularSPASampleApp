@@ -1,0 +1,17 @@
+mat-sidenav-container{
+    height: 100%;
+}
+mat-sidenav,mat-sidenav-content{
+    padding: 0px;
+    
+}
+mat-sidenav{
+    background-color: lightcoral;
+    width: 200px;
+}
+a{
+    text-decoration:none;
+}
+ul{
+    list-style: none;
+}

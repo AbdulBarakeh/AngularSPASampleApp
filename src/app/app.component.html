@@ -1,0 +1,21 @@
+<p>
+  <mat-toolbar>
+    <button (click)="sidenav.toggle()" mat-icon-button class="example-icon"
+      aria-label="Example icon-button with menu icon">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span>{{title}}</span>
+  </mat-toolbar>
+</p>
+<mat-sidenav-container>
+  <mat-sidenav #sidenav mode="side">
+    <ul>
+      <li> <a mat-list-item routerLink="/viewone">VIEW-ONE</a></li>
+      <li> <a mat-list-item routerLink="/viewtwo">VIEW-TWO</a></li>
+    </ul>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>
